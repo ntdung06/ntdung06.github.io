@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
+  <link rel="icon" type="image/svg+xml" 
+  href="/favicon.svg">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Website của tôi</title>
@@ -25,20 +27,122 @@
       background-size: cover;
     }
   </style>
+<title>Dung Sky | Portfolio</title>
+<meta
+  name="description"
+  content="Portfolio của Dung Sky, giới thiệu bản thân và các kỹ năng phát triển web."
+>
+
+<meta property="og:title" content="Dung Sky | Portfolio">
+<meta
+  property="og:description"
+  content="Portfolio của Dung Sky — đang học và xây dựng các dự án web."
+>
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ntdung06.github.io/">
 </head>
 
 <body>
-  <main class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-    <div class="w3-display-topleft w3-padding-large w3-xlarge">
-      Dung Sky
-    </div>
+  <header class="bg-slate-950 text-white">
+  <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-5">
+    <a href="#home" class="text-xl font-bold">Dung Sky</a>
 
-    <div class="w3-display-middle w3-center">
-      <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
-      <hr class="w3-border-grey" 
-        style="margin:auto;width:40%">
-      <p class="w3-large w3-center">10 days left</p>
+    <div class="flex gap-5 text-sm text-slate-300">
+      <a href="#about" class="hover:text-white">Giới thiệu</a>
+      <a href="#contact" class="hover:text-white">Liên hệ</a>
     </div>
-  </main>
+  </nav>
+</header>
+
+<main>
+  <section id="home" class="bg-slate-950 text-white">
+    <div class="mx-auto grid min-h-[80vh] max-w-6xl items-center gap-12 px-6 py-16 md:grid-cols-2">
+      <div>
+        <p class="mb-3 text-lg text-sky-400">Xin chào, mình là</p>
+        <h1 class="text-5xl font-bold tracking-tight sm:text-6xl">Dung Sky</h1>
+
+        <p class="mt-6 max-w-xl text-lg leading-8 text-slate-300">
+          Mình đang học lập trình web và xây dựng những trải nghiệm đơn giản,
+          hữu ích trên Internet.
+        </p>
+
+        <a href="#about"
+          class="mt-8 inline-block rounded-lg bg-sky-500 px-6 py-3 font-semibold text-white hover:bg-sky-400">
+          Tìm hiểu về mình
+        </a>
+      </div>
+
+      <div class="flex justify-center">
+        <div class="flex h-64 w-64 items-center justify-center rounded-full bg-gradient-to-br from-sky-400 to-indigo-600 text-7xl font-bold shadow-2xl">
+          D
+        </div>
+      </div>
+    </div>
+  </section>
+<section id="about" class="bg-slate-900 px-6 py-20 text-white">
+  <div class="mx-auto max-w-6xl">
+    <p class="text-sm font-semibold uppercase tracking-widest text-sky-400">
+      Giới thiệu
+    </p>
+
+    <div class="mt-4 grid gap-10 md:grid-cols-2">
+      <div>
+        <h2 class="text-3xl font-bold sm:text-4xl">Về mình</h2>
+
+        <p class="mt-6 leading-8 text-slate-300">
+          Mình là Dung, đang học phát triển web. Mình thích biến ý tưởng
+          thành những trang web rõ ràng, dễ sử dụng và hoạt động tốt trên
+          cả máy tính lẫn điện thoại.
+        </p>
+
+        <p class="mt-4 leading-8 text-slate-300">
+          Hiện mình đang rèn luyện HTML, CSS, JavaScript và các công cụ
+          xây dựng giao diện web.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-semibold">Kỹ năng đang học</h3>
+
+        <div class="mt-5 flex flex-wrap gap-3">
+          <span class="rounded-full bg-slate-800 px-4 py-2 text-sky-300">HTML</span>
+          <span class="rounded-full bg-slate-800 px-4 py-2 text-sky-300">CSS</span>
+          <span class="rounded-full bg-slate-800 px-4 py-2 text-sky-300">JavaScript</span>
+          <span class="rounded-full bg-slate-800 px-4 py-2 text-sky-300">Tailwind CSS</span>
+          <span class="rounded-full bg-slate-800 px-4 py-2 text-sky-300">Git</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="contact" class="bg-slate-950 px-6 py-20 text-center text-white">
+  <div class="mx-auto max-w-3xl">
+    <p class="text-sm font-semibold uppercase tracking-widest text-sky-400">
+      Liên hệ
+    </p>
+
+    <h2 class="mt-4 text-3xl font-bold sm:text-4xl">
+      Cùng trao đổi nhé
+    </h2>
+
+    <p class="mt-5 leading-8 text-slate-300">
+      Nếu bạn muốn trao đổi về website hoặc dự án, hãy gửi lời nhắn cho mình.
+    </p>
+
+    <a
+      href="mailto:dungnguyenwin12123@gmail.com"
+      class="mt-8 inline-block rounded-lg bg-sky-500 px-6 py-3 font-semibold text-white hover:bg-sky-400"
+    >
+      Gửi email cho mình
+    </a>
+  </div>
+</section>
+</main>
+
+<footer class="bg-slate-950 px-6 py-6 text-center text-sm text-slate-400">
+  © 2026 Dung Sky
+</footer>
+
+<script type="module" src="/src/scripts/application.js"></script>
 </body>
 </html>
